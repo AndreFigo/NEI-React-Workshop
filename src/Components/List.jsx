@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import AddItem from "./AddItem";
 import ListItems from "./ListItems";
+import Frame from "./Frame";
 
 function List() {
   const [items, setItems] = useState([]);
@@ -25,10 +26,10 @@ function List() {
 
 
   return (
-    <>
+    <Frame>
       <AddItem setItems={setItems} />
       <ListItems items={items} setItems={setItems} />
-    </>
+    </Frame>
   );
 }
 

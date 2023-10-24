@@ -14,9 +14,10 @@ function AddItem({ setItems }) {
 
     return (
         <>
-            <form onSubmit={addItem}>
-                <input type="text" className="form-control" value={newItem} onChange={(event) => setNewItem(event.target.value)} />
-                <button type="submit" className="btn btn-primary">
+            <h1>Add item</h1>
+            <form onSubmit={addItem} className="input-container">
+                <input type="text" className="input-field" value={newItem} onChange={(event) => setNewItem(event.target.value)} />
+                <button type="submit" className="sub-button">
                     Add
                 </button>
             </form>

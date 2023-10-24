@@ -25,14 +25,14 @@ function ListItems({ items, setItems }) {
     return (
         <>
             <h1>My List</h1>
-            <ul className="list-group">
+            <ul className="list-container">
                 {items.length === 0 && "No items"}
                 {items.map((item, index) => (
                     <li
                         className={
                             index === selectedItem
-                                ? "list-group-item active"
-                                : "list-group-item"
+                                ? "list-item highlighted"
+                                : "list-item"
                         }
                         key={index}
                         onClick={() => selectItem(item, index)}

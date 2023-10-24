@@ -229,8 +229,7 @@ function selectItem(item, index) {
 }
 
 //...
-	<li
-		className = {selectedIndex === index ? "list-group-item active" : "list-group-item"}
+	<li className = {selectedIndex === index ? "list-group-item active" : "list-group-item"}
 		onClick={() => selectItem(item, index)}
 		key= {index}
 		>
@@ -412,3 +411,5 @@ useEffect(() => {
 
 - Typescript
 - Routing
+- File structure for bigger repositories
+- Styling
